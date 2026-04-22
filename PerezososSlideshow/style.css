@@ -1,0 +1,104 @@
+body
+{
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgb(168, 213, 94), rgb(233, 176, 20), rgb(50, 89, 50));
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    overflow:hidden;
+    
+}
+h1
+{
+color: rgb(239, 230, 230);
+text-align: center;
+text-shadow: 0 0 10px rgb(102, 102, 15);
+padding: 50px;
+}
+
+.image
+{
+    display:none;
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 1px black;
+}
+.image.active
+{
+    display: block;
+    
+}
+.image.active:hover
+{
+    transform: scale(1.1);
+   
+}
+.container {
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: rgba(242, 255, 56, 0.239);
+    padding: 10px;
+    font: 'Poppins' sans-serif;
+    color: rgb(74, 82, 1);
+    border-color: transparent;
+    box-shadow: 0 0 10px rgb(255, 255, 0);
+}
+.prev
+{
+    position: absolute;
+    left: 450px;
+    box-shadow: 0 0 10px rgb(255, 255, 0);
+    
+}
+.next
+{
+    position: absolute;
+    right: 450px;
+    box-shadow: 0 0 10px rgb(255, 255, 0);
+    
+  
+}
+.next:hover
+{
+background:rgb(227, 127, 56, 0.551);
+box-shadow: 0 0 60px rgb(208, 116, 3);
+}
+.prev:hover
+{
+background:rgba(227, 127, 56, 0.551);
+box-shadow: 0 0 60px rgb(208, 116, 3);
+}
+.oval
+{
+   background: rgba(0, 0, 0, 0.3); /* Slightly darker to see it better */
+    border-radius: 50px;           /* Makes it look like a pill/oval */
+    width: 200px;                  /* Give it a width */
+    height: 40px;                  /* Give it a height */
+    
+    /* Layout properties to center the circles inside it */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    /* Position it relative to the page */
+    margin: 20px auto;
+}
+.circle
+{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: rgba(155, 227, 10, 0.431);
+    transition: transform 0.5s ease;
+}
+
+.circle:hover
+{
+    transform: scale(1.1);
+    background:yellow;
+
+}
